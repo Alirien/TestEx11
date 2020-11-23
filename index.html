@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<body>
+    <header class="header">
+        <img src="./img/Слой_2.png" class="logo">
+        <img src="./img/2.png" class="contact">
+    </header>
+   <menu class="menu">
+    <nav class="navbar navbar-dark bg-dark">
+                <button class="menu-item btn btn-dark">Кредитные карты</button><!--Не знаю как поменять цвет активной кнопки, и не смог сделать меню точь в точь как в макете-->
+                <button class="menu-item btn btn-dark active">Вклады</button><!--Не знаю как поменять цвет активной кнопки, и не смог сделать меню точь в точь как в макете-->
+                <button class="menu-item btn btn-dark">Дебетовая карта</button><!--Не знаю как поменять цвет активной кнопки, и не смог сделать меню точь в точь как в макете-->
+                <button class="menu-item btn btn-dark">Страхование</button><!--Не знаю как поменять цвет активной кнопки, и не смог сделать меню точь в точь как в макете-->
+                <button class="menu-item btn btn-dark">Друзья</button><!--Не знаю как поменять цвет активной кнопки, и не смог сделать мею точь в точь как в макете-->
+                <button class="menu-item btn btn-dark">Интернет-банк</button><!--Не знаю как поменять цвет активной кнопки, и не смог сделать меню точь в точь как в макете-->
+      </nav>
+   </menu> 
+    <content class="content">
+            <div class="calc" id="calc">
+                <h1 class="title">Калькулятор</h1>
+                <div class="row">
+                        <div class="col-4">
+                            <label for="datep" class="label">Дата оформления вклада</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="text" id="datep" class="form-control mb-2 mr-sm-2" name="date">
+                        </div>
+                </div>
+                <div class="ots">
+                </div><!--1)Не смог выравнить по правой стороне2)Не корректно работает Datepicker, не смог разобраться почему, поэтому использовал календарь с Bootstrap-->
+                <div class="row">
+                    <div class="col-4">
+                        <label for="sumvkl" class="label"> Сумма вклада </label>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" min = "1000" max="3000000" id="sumvkl" class="form-control mb-2 mr-sm-2" name="summn-1"> 
+                    </div>
+                </div>
+                <div class="ots">
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label for="select" class="label">Срок вклада </label>
+                    </div>
+                    <div class="col-2">
+                        <select id="select" class="select form-control mb-2 mrs-sm-2">
+                            <option>1 год</option>
+                            <option>2 года</option>
+                            <option>3 года</option>
+                            <option>4 года</option>
+                            <option>5 лет</option>
+                        </select>
+                    </div>    
+                </div>
+                <div class="ots">
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label for="radio1" class="label">Пополнение вклада</label> <!--Не смог выравнить по правой стороне-->
+                    </div>
+                    <div class="col-1 row">
+                        <input type="radio" value="1" name="group1" id="radio1" class="radio form-inline mb-2 mr-sm-2">
+                        <label for="radio1">Да </label>
+                    </div>
+                    <div class="col-1 row">
+                        <input type="radio" value="2" name="group2" id="radio2" class="radio form-inline mb-2 mr-sm-2">
+                        <label for="radio2">Нет</label>
+                    </div>
+                </div>
+                <div class="ots">
+                </div>
+                <div class="row"> 
+                    <div class="col-4">
+                        <label for="sumpop" class="label"> Сумма пополнения вклада</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" min = "1000" max="3000000" id="sumpop" class="form-control mb-2 mr-sm-2" name="summadd">
+                    </div>
+                </div><!--Не смог выравнить по правой стороне-->
+                <div class="ots">
+                </div>
+                <div><button class="button" id="send">Рассчитать</button> <label class="lb">Результат:</label></div><!--Не смог выравнить лейбл по середине-->
+            </div>
+    </content>
+   <footer class="footer">
+        <a href="" class="footer-item">Кредитные карты</a>
+        <a href="" class="footer-item">Вклады</a>
+        <a href="" class="footer-item">Дебетовая карта</a>
+        <a href="" class="footer-item">Страхование</a>
+        <a href="" class="footer-item">Друзья</a>
+        <a href="" class="footer-item">Интернет-банк</a>
+   </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</html>

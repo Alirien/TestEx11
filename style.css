@@ -1,0 +1,117 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+.contact
+{
+    float:right;
+    margin-top: 25px;
+    padding-right:10px ;
+}
+.menu
+{
+    margin-left:-40px ;
+}
+.menu-item
+{
+    float:none;
+    display:table-cell;
+    text-align:center;
+    width:15%;
+}
+
+.logo
+{
+    width: 230px;
+    height: 86;
+}
+.footer
+{
+    height: 55px;
+    background-color:#231f20;
+
+}
+.footer-item
+{
+    color: white;
+    float:none;
+    display:table-cell;
+    text-align:center;
+    width:15%;
+    text-decoration: underline;
+}
+.calc 
+{
+    width: 1200px;
+    height: 530px;
+    background-color: #f2f2f2;
+    margin-top:5px ;
+    margin-bottom:150px;
+    margin-left: 50px;
+}
+.title
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:98px ;
+    padding-top:19px;
+    color:#eb5017;
+}
+.label
+{
+    margin-left:70px;
+}
+#datepicker
+{
+    width: 150px;
+}
+.button
+{
+    width: 120px;
+    height: 37px;
+    margin-left:70px;
+    text-align: center;
+    background-color:#8ad100;
+    color:#405e06;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn :focus
+{
+    background-color:#eb5017;
+}
+.ots
+{
+    padding-bottom: 10px;
+}
+.lb 
+{
+    margin-left:150px;
+    margin-top:-45px;
+    color:rgb(5, 153, 30);
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.col-4
+{
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.radio
+{
+    margin-top: 7px;
+}
